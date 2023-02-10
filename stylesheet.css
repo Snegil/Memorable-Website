@@ -154,7 +154,36 @@ body {
     text-decoration: underline;
     cursor: pointer;
 }
+.PopupShowcaseSticky {
+    position: sticky;
+    top: 130px;
+    z-index: 200;
+}
+.PopupShowcase {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 90vh;
+    padding: 25px;
+    background-color:rgb(17, 17, 17);
+}
+.CloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 2vw;
+    height: 2vw;
+}
+.CloseButtonImg {
+    width: 100%;
+    height: 100%;
+}
+#LightsOnPopup {
+    display: none;
+}
 a {
+    user-select: none;
+    cursor: pointer;
     color: inherit;
     text-decoration: none;
     transition: 0.5s ease-in;

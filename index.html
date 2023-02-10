@@ -16,6 +16,8 @@
     <meta charset="utf-8" lang="sv">
     <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
     <link rel="stylesheet" href="stylesheet.css">
+
+    <script src="javascript.js"></script>
 </head>
 <body>
     <h1 id="Header">
@@ -29,6 +31,18 @@
             <!-- <button id="Resume" class="ColouredText">Resume</button> -->
         </span> <br>
     </h1>
+
+    <!-- POPUP SHOWCASES FOR GAMES GO HERE -->
+    <div class="PopupShowcaseSticky">
+        <div id="LightsOnPopup" class="PopupShowcase">
+            <div class="CloseButton" onclick="FastToggle('LightsOnPopup')">
+                <img src="Images/QuitButton.png" class="CloseButtonImg">
+            </div>
+            <iframe width="840" height="473" src="https://www.youtube.com/embed/99n0UmfoNmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- END OF POPUP SHOWCASES -->
+
     <div id="CenterBody">
         <span class="textaligncenter">
             <span id="Left">
@@ -52,13 +66,13 @@
                 example@email.com
             </div>
             </div>
-    </span>
+        </span>
     </div>
     <div id="LowerBody">
         <div id="LowerBodyTitle" class="textaligncenter">
             Games I've made:
         </div>
-        <a href="https://github.com/Snegil/LightsOn" target="_blank">
+        <a onclick="FastToggle('LightsOnPopup')" target="_blank">
         <span class="Showcase">
             <img src="Images/Games/LightsOn.png" class="ShowcaseIMG">
             <div class="ShowcaseTitle">
