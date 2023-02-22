@@ -90,7 +90,7 @@ body {
 }
 #ContactInfo {
     margin: 1vh 0 1vh 0;
-    font-weight:bold;
+    font-weight: bold;
 }
 .textaligncenter {
     text-align: center;
@@ -113,7 +113,7 @@ body {
     border-radius: 20px;
 }
 #LowerBodyTitle {
-    background-color: #000;
+    /*background-color: #000;*/
     border-radius: 0.25vw;
     font-weight: bold;
     margin-bottom: 20px;
@@ -165,7 +165,13 @@ body {
     width: 50%;
     height: 90vh;
     padding: 25px;
+    padding-top: 50px;
     background-color:rgb(17, 17, 17);
+}
+iframe {
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
 }
 .CloseButton {
     position: absolute;
@@ -180,6 +186,23 @@ body {
 }
 #LightsOnPopup {
     display: none;
+}
+.GameInformation {
+    background-color: #424242;
+    margin-top: -10px;
+    padding-left: 20px;
+    text-align: left;
+    vertical-align: center;
+    height: 4vh;
+    border-radius: 0px 0px 2vw 2vw;
+    -webkit-border-radius: 0px 0px 2vw 2vw;
+    -moz-border-radius: 0px 0px 2vw 2vw;
+    -ms-border-radius: 0px 0px 2vw 2vw;
+    -o-border-radius: 0px 0px 2vw 2vw;
+}
+.GameInformationImage {
+    max-height: 100%;
+    width: 100px;
 }
 a {
     user-select: none;
@@ -198,12 +221,15 @@ a:hover {
 @media screen and (max-width: 600px) {
     #CenterBody {
         text-align: center;
-        padding: 20px 0 0 0;
-        padding: 0;
+        padding: 0px 0 0 0;
+        margin: 0;
+    }
+    #LowerBody {
+        margin: 20px 0 0 0;
     }
     .Text {
         display: block;
-        margin: 0 -6vw 0 -6vw;
+        margin: 0 -12vw 0 -12vw;
     }
     #Left {
         width: max-content;
@@ -232,7 +258,7 @@ a:hover {
         -moz-transform: translateY(25%);
         -ms-transform: translateY(25%);
         -o-transform: translateY(25%);
-}
+    }
     #LowerBody {
         text-align: left;
         padding: 20;
@@ -243,5 +269,24 @@ a:hover {
     }
     .ShowcaseTitle {
         font-size: 10vw;
+    }
+    .PopupShowcaseSticky {
+        top: 120px;
+    }
+    .PopupShowcase {
+        left: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .CloseButton {
+        width: 8vw;
+        height: 4vh;
+    }
+    iframe {
+        max-height: 200px;
+    }
+    .GameInformation {
+        margin-top: -10px;
+        padding-left: 0px;
     }
 }
