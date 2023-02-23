@@ -156,14 +156,14 @@ body {
 }
 .PopupShowcaseSticky {
     position: sticky;
-    top: 130px;
+    top: 15vh;
     z-index: 200;
 }
 .PopupShowcase {
     position: absolute;
     left: 25%;
     width: 50%;
-    height: 90vh;
+    height: 85vh;
     padding: 25px;
     padding-top: 50px;
     background-color:rgb(17, 17, 17);
@@ -174,14 +174,13 @@ iframe {
     padding: 0;
 }
 .CloseButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 2vw;
+    display: block;
+    text-align: right;
+    /*position: absolute;*/
+    max-width: 100%;
     height: 2vw;
 }
 .CloseButtonImg {
-    width: 100%;
     height: 100%;
 }
 #LightsOnPopup {
@@ -279,7 +278,6 @@ a:hover {
         width: 100%;
     }
     .CloseButton {
-        width: 8vw;
         height: 4vh;
     }
     iframe {
